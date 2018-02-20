@@ -15,7 +15,7 @@ public class Shapes {
     public init() { }
     
     
-    func drawRectangle() {
+    public func drawRectangle() {
         
         let img = renderer.image { ctx in
             //awesome drawing code
@@ -28,7 +28,7 @@ public class Shapes {
         }
         
     }
-    func drawCircle()
+    public func drawCircle()
     {
         
         let img = renderer.image { ctx in
@@ -42,7 +42,7 @@ public class Shapes {
         }
         
     }
-    func drawCheckerBoard()
+    public func drawCheckerBoard()
     {
         
         let img = renderer.image { ctx in
@@ -59,7 +59,7 @@ public class Shapes {
         
     }
     
-    func drawRotatedSquares()
+    public func drawRotatedSquares()
     {
         
         let img = renderer.image { ctx in
@@ -78,7 +78,7 @@ public class Shapes {
         
         
     }
-    func drawLines()
+    public func drawLines()
     {
         
         let img = renderer.image { ctx in

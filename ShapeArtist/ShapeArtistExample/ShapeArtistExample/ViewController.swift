@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import ShapeArtist
 
 class ViewController: UIViewController {
-
+   
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTapped(_ sender: UIButton) {
+        
+        if sender.titleLabel?.text == "Rect" {
+            myshapes.drawRectangle()
+        }
         
         
     }
