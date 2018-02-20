@@ -1,0 +1,16 @@
+PODS:
+  - ShapeArtist (1.0.0)
+
+DEPENDENCIES:
+  - ShapeArtist (from `/Users/hema/Desktop/Frameworks/ShapeArtist/ShapeArtist/ShapeArtist.podspec`)
+
+EXTERNAL SOURCES:
+  ShapeArtist:
+    :path: /Users/hema/Desktop/Frameworks/ShapeArtist/ShapeArtist/ShapeArtist.podspec
+
+SPEC CHECKSUMS:
+  ShapeArtist: 156abc2447e955a3007a27796513d45283248e8d
+
+PODFILE CHECKSUM: fa7bae3e01d4aacc52e508f6a98f6595bebe626b
+
+COCOAPODS: 1.4.0

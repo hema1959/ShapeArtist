@@ -1,0 +1,6 @@
+framework module ShapeArtist {
+  umbrella header "ShapeArtist-umbrella.h"
+
+  export *
+  module * { export * }
+}

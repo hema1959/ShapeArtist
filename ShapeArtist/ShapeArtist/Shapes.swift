@@ -12,7 +12,7 @@ import UIKit
 public class Shapes {
     let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
     
-    private init() { }
+    public init() { }
     
     
     func drawRectangle() {

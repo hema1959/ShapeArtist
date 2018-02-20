@@ -1,0 +1,19 @@
+{
+  "name": "ShapeArtist",
+  "version": "1.0.0",
+  "summary": "This framework allows the user to create different shapes",
+  "homepage": "https://github.com/hema1959/ShapeArtist",
+  "license": "MIT",
+  "authors": {
+    "hemavenkat": "hemavenkat59@gmail.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/hema1959/ShapeArtist.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "ShapeArtist/**/*",
+  "frameworks": "UIKit"
+}
