@@ -15,8 +15,8 @@ public class Shapes {
     public init() { }
     
     
-    public func drawRectangle() {
-        
+    public func drawRectangle() -> UIImage {
+      
         let img = renderer.image { ctx in
             //awesome drawing code
             let rectangle = CGRect(x: 0, y:0, width: 512, height: 512)
@@ -25,13 +25,15 @@ public class Shapes {
             ctx.cgContext.setLineWidth(10)
             ctx.cgContext.addRect(rectangle)
             ctx.cgContext.drawPath(using: .fillStroke)
+            
+            
         }
-        
+        return img
     }
-    public func drawCircle()
-    {
+    public func drawCircle() -> UIImage {
+        do {
         
-        let img = renderer.image { ctx in
+        let img = self.renderer.image { ctx in
             //awesome drawing code
             let rectangle = CGRect(x: 5, y:5, width: 502, height: 502)
             ctx.cgContext.setFillColor(UIColor.red.cgColor)
@@ -40,9 +42,10 @@ public class Shapes {
             ctx.cgContext.addEllipse(in: rectangle)
             ctx.cgContext.drawPath(using: .fillStroke)
         }
-        
+        return img
+        }
     }
-    public func drawCheckerBoard()
+    public func drawCheckerBoard() -> UIImage
     {
         
         let img = renderer.image { ctx in
@@ -56,10 +59,10 @@ public class Shapes {
                 }
             }
         }
-        
+        return img
     }
     
-    public func drawRotatedSquares()
+    public func drawRotatedSquares() -> UIImage
     {
         
         let img = renderer.image { ctx in
@@ -76,9 +79,9 @@ public class Shapes {
             ctx.cgContext.strokePath()
         }
         
-        
+        return img
     }
-    public func drawLines()
+    public func drawLines() -> UIImage
     {
         
         let img = renderer.image { ctx in
@@ -101,6 +104,7 @@ public class Shapes {
             ctx.cgContext.strokePath()
             
         }
+        return img
     }
 }
 
